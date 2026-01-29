@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/anglajuliusson/dt210g-laboration2-backend#readme",
   "dependencies": {
+    "cors": "^2.8.6",
     "fastify": "^5.7.2",
     "mysql2": "^3.16.2"
   }
