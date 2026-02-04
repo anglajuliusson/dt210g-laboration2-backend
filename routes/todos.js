@@ -32,11 +32,6 @@ export const addTodo = async(req, reply) => {
             if (!title || typeof title !== 'string' || title.trim() === '') {
                 return reply.status(400).send({ error: "title måste fyllas i korrekt." });
             }
-            
-            // Validering: kolla att description är en icke-tom sträng
-            if (!description|| typeof description !== 'string' || description.trim() === '') {
-                return reply.status(400).send({ error: "description måste fyllas i korrekt." });
-            }
 
             // Validering: kolla att status är en icke-tom sträng
             if (!status || typeof status !== 'string' || status.trim() === '') {
@@ -66,11 +61,6 @@ export const updateTodo = async(req, reply) => {
             // Validering: kolla att name är en icke-tom sträng
             if (!title || typeof title !== 'string' || title.trim() === '') {
                 return reply.status(400).send({ error: "title måste fyllas i korrekt." });
-            }
-            
-            // Validering: kolla att description är en icke-tom sträng
-            if (!description|| typeof description !== 'string' || description.trim() === '') {
-                return reply.status(400).send({ error: "description måste fyllas i korrekt." });
             }
 
             // Validering: kolla att status är en icke-tom sträng
